@@ -1,4 +1,4 @@
-class SnakesLadders():
+class SnakesLadders:
 
     def __init__(self):
         self.ladders_start = [2, 7, 8, 15, 21, 28, 36, 51, 71, 78, 87]
@@ -35,7 +35,6 @@ class SnakesLadders():
         if self.player_turn == 1:
 
             self.player_1 += total
-            print(self.player_1)
             if self.player_1 > 100:
                 self.player_1 = 100 - abs(100 - self.player_1)
             elif self.player_1 == 100:
